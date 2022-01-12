@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+import BtnDelete from './BtnDelete';
+import BtnEdit from './BtnEdit';
 
 class Table extends React.Component {
   render() {
@@ -44,6 +46,10 @@ class Table extends React.Component {
                   <td>{ ask.toFixed(2) }</td>
                   <td>{ (value * ask).toFixed(2) }</td>
                   <td>Real</td>
+                  <td style={ { display: 'flex', justifyContent: 'space-evenly' } }>
+                    <BtnEdit id={ id } />
+                    <BtnDelete id={ id } />
+                  </td>
                 </tr>
               );
             })
