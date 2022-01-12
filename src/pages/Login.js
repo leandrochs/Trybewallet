@@ -34,10 +34,11 @@ class Login extends React.Component {
     }
   }
 
-  login(e) {
+  async login(e) {
     e.preventDefault();
     const { email } = this.state;
     const { loginDispatch, history } = this.props;
+
     loginDispatch(email);
     history.push('/carteira');
   }
@@ -52,7 +53,6 @@ class Login extends React.Component {
           <input
             autoComplete="off"
             data-testid="email-input"
-            // onChange={ (e) => this.setState({ email: e.target.value }) }
             onChange={ this.onChange }
             name="email"
             placeholder="E-mail"
@@ -62,7 +62,6 @@ class Login extends React.Component {
           <input
             autoComplete="current-password"
             data-testid="password-input"
-            // onChange={ (e) => this.setState({ password: e.target.value }) }
             onChange={ this.onChange }
             name="password"
             placeholder="Senha"
