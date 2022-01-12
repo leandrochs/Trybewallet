@@ -568,7 +568,7 @@ Crie uma página para gerenciar a carteira de gastos em diversas moedas, e que t
 
 #### 8. Crie um botão para deletar uma despesa da tabela contendo as seguintes características:
 
-    ![image](btnExcluir.gif)
+  ![image](btnExcluir.gif)
 
   * O botão deve ser o último item da linha da tabela e deve possuir `data-testid="delete-btn"`.
 
@@ -584,7 +584,7 @@ Crie uma página para gerenciar a carteira de gastos em diversas moedas, e que t
 
 #### 9. Crie um botão para editar uma despesa da tabela contendo as seguintes características:
 
-    ![image](btnEditar.gif)
+  ![image](btnEditar.gif)
 
   * O botão deve estar dentro do último item da linha da tabela e deve possuir `data-testid="edit-btn"`
 
